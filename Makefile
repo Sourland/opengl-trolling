@@ -6,11 +6,11 @@ CFLAGS=-Wall
 LIBS=-lGLEW -lGL -lglfw
 
 # Include and Library paths for GLEW, GLFW, and GLAD
-INC_DIRS=-I./lib -I~/glfw/include
+INC_DIRS=-I./lib -I~/glfw/include -I./shaders
 LIB_DIRS=-L~/glfw/lib
 
 # Source files
-SRCS=triangle_example.cpp lib/glad.c
+SRCS=shader.cpp shader_example_c.cpp lib/glad.c 
 
 # Executable name
 EXE=myOpenGLApp
